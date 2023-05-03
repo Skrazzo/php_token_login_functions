@@ -20,7 +20,7 @@ function generate_token($username){
     include './Lib/mysql.php';
     include './Lib/var.php';
     include './Func/get_ip_address.php';
-    
+
     $sql = new MysqliDb($host, $user, $pass, $db);
 
     $token = generateRandomString(32); // generate token for user cookie
@@ -33,11 +33,6 @@ function generate_token($username){
     // combining two hashes and hashing it to generate database token
     $db_token = $token_hash . $ip_hash;
     $db_token_hash = hash('sha256', $db_token);
-
-    echo '<p>'. $token .'</p>';
-    echo '<p>'. $ip .'</p>';
-
-    echo '<p>'. $db_token_hash .'</p>';
 
     // token will expire in 30 days
     setcookie($cookie_token_name, $token, time()+3600 * 24 * $token_expire_days);
