@@ -2,7 +2,7 @@
 
 
 // for db
-$db     = 'www';        // database where table with users are stored
+$db     = 'users';        // database where table with users are stored
 $host   = 'localhost';  // address for sql database
 $user   = 'root';       // username for database login
 $pass   = '';           // password for database login
