@@ -36,7 +36,7 @@ Here's database example:
 ### Hashing algos
 * [hash_algos();](https://www.php.net/manual/en/function.hash-algos.php)
 
-### Exmaples
+# Exmaples
 Including files:
 ```php
 include './Func/generate_token.php'; // generate database/client side tokens
@@ -57,4 +57,33 @@ register_user('skrazzo', 'test', true);
 // auto login user after creating it's account
 // that means after creating it, function will generate token and log user in
 register_user('skrazzo', 'test', false, true);
+```
+
+User login:
+```php
+// login, function will return false on incorrect login
+// and true on correct one
+$username = 'skrazzo';
+if(login($username, 'test')){
+    // generates token for server side, and client side
+    generate_token($username); 
+}
+```
+
+Verify users login token:
+```php
+// if user has been logged in before, hes cookie token has to be saved in 
+// token cookie, calling verify_token(); will return true on successfull token
+// and will return false, if token is incorrect
+if(!verify_token()){
+    die('incorrect login!');
+}
+
+// proceed to the website
+```
+Logout:
+```php
+// by calling logout(); function, php function will remove database token
+// so the user won't be able to log in anymore
+logout();
 ```
