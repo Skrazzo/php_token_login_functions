@@ -4,8 +4,6 @@
 * securiti 🔐
 * Tokens get generated from ip + random token taken from cookies. (That means that if someone would steal your token, person still wouldn't be able to log into your account because token simply wouldn't match with the database version)
 
-
-
 # To start
 * Copy paste repository
 * Edit Lib/var.php file so that mysql class can connect to your database
@@ -63,7 +61,7 @@ Logout:
 // so the user won't be able to log in anymore
 logout();
 ```
-### ![mysql](https://user-images.githubusercontent.com/58330666/236526517-efe2f1dc-e34b-4773-88ec-4db3af786431.png) Mysql library
+### ![mysql](https://user-images.githubusercontent.com/58330666/236526883-6dcbc5ab-f383-4025-8b84-38c424e2afb0.png) Mysql library
 * [PHP-MySQLi-Database-Class](https://github.com/ThingEngineer/PHP-MySQLi-Database-Class)
 
 
