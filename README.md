@@ -63,8 +63,9 @@ Logout:
 // so the user won't be able to log in anymore
 logout();
 ```
-### ![mysql](https://user-images.githubusercontent.com/58330666/236517594-499413fd-88a0-4509-a268-125cf0e9a22a.png) Mysql library
+### ![mysql](https://user-images.githubusercontent.com/58330666/236526517-efe2f1dc-e34b-4773-88ec-4db3af786431.png) Mysql library
 * [PHP-MySQLi-Database-Class](https://github.com/ThingEngineer/PHP-MySQLi-Database-Class)
+
 
 ### Variables
 You should edit Lib/var.php file, and create your own database.
