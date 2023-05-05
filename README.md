@@ -5,6 +5,8 @@ Made so that you can create login systems easier
 * [PHP-MySQLi-Database-Class](https://github.com/ThingEngineer/PHP-MySQLi-Database-Class)
 
 ## Variables
+You should edit Lib/var.php file, and create your own database.
+Here's and example:
 ```php
 // for db
 $db     = 'users';        // database where table with users are stored
@@ -22,4 +24,4 @@ $cookie_token_name  = 'token';  // cookie name where client side tokens will be 
 $token_expire_days  = 30;       // token cookie will expire after 30 days
 $hash_algo          = 'sha256'; // selected hashing algorithm
 ```
-
+![database](https://user-images.githubusercontent.com/58330666/236520296-f41cc162-70f6-4de9-85e0-ce013b26c11e.png)
