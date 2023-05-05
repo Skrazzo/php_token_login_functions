@@ -7,6 +7,7 @@
 # To start
 * Copy paste repository
 * Edit Lib/var.php file so that mysql class can connect to your database
+* **Remember when you're making an database, token column default value should be null AND allow null to be an value**
 * Configurate Lib/var.php file to match your database with user information
 * Start using needed function with include './Lib/**[function_you_need]**.php
 
