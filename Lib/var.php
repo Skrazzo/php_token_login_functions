@@ -15,6 +15,7 @@ $token_column       = 'token';
 $cookie_token_name  = 'token';
 
 $token_expire_days  = 30; // token cookie will expire after 30 days
+$hash_algo          = 'sha256'; // selected hashing algorithm
 
 
 ?>

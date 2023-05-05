@@ -12,12 +12,12 @@ function verify_token(){
         $ip = getIPAddress(); // get users ip address
         
         // getting hashes from given generated token, and ip
-        $token_hash = hash('sha256', $token);
-        $ip_hash    = hash('sha256', $ip);
+        $token_hash = hash($hash_algo, $token);
+        $ip_hash    = hash($hash_algo, $ip);
 
         // combining two hashes and hashing it to generate database token
         $db_token = $token_hash . $ip_hash;
-        $db_token_hash = hash('sha256', $db_token);
+        $db_token_hash = hash($hash_algo, $db_token);
 
         // compare to the token thats stored in the database
         $sql = new MysqliDb($host, $user, $pass, $db);
