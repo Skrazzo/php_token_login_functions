@@ -35,3 +35,26 @@ Here's database example:
 ![database](https://user-images.githubusercontent.com/58330666/236520296-f41cc162-70f6-4de9-85e0-ce013b26c11e.png)
 ### Hashing algos
 * [hash_algos();](https://www.php.net/manual/en/function.hash-algos.php)
+
+### Exmaples
+Including files:
+```php
+include './Func/generate_token.php'; // generate database/client side tokens
+include './Func/register_user.php'; // registering a user
+include './Func/verify_token.php'; // proving if user is logged in
+include './Func/login_user.php'; // login user with given password and username
+include './Func/logout_user.php'; // logout from an account
+```
+
+Creating user account:
+```php
+// register a user
+register_user('skrazzo', 'test');
+
+// strong check users password (won't let to register with weak password)
+register_user('skrazzo', 'test', true);
+
+// auto login user after creating it's account
+// that means after creating it, function will generate token and log user in
+register_user('skrazzo', 'test', false, true);
+```
