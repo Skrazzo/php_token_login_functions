@@ -12,7 +12,7 @@
 * Configurate Lib/var.php file to match your database with user information
 * Start using needed function with include './Lib/**[function_you_need]**.php
 
-# Exmaples
+# Examples
 Including files:
 ```php
 include './Func/generate_token.php'; // generate database/client side tokens
