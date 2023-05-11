@@ -4,9 +4,9 @@
 if(!function_exists('verify_token')){
 
     function verify_token(){
-        include '/home/a/www/Lib/var.php';
-        include '/home/a/www/Lib/mysql.php';
-        include '/home/a/www/Func/get_ip_address.php';
+        include './Lib/var.php';
+        include './Lib/mysql.php';
+        include './Func/get_ip_address.php';
     
         if(isset($_COOKIE[$cookie_token_name])){
     
