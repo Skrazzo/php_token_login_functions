@@ -23,6 +23,8 @@ if(!function_exists('user_exists')){
     function user_exists($username){
         include './Lib/var.php';
         include './Lib/mysql.php';
+        include './Func/generate_token.php';
+
     
         $sql = new MysqliDb($host, $user, $pass, $db);
         $sql->where($username_column, $username);
